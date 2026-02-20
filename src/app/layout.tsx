@@ -53,10 +53,6 @@ export const metadata: Metadata = {
     description:
       "Experience a real dog vacation. Cage-free boarding, swimming, nature walks on a 1.5-acre tropical farm in Trivandrum.",
   },
-  icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
-  },
   robots: {
     index: true,
     follow: true,
@@ -72,7 +68,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <JsonLd />
-        {/* Material Symbols icon font - loaded in root layout so it applies to all pages */}
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap"
           rel="stylesheet"

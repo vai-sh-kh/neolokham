@@ -20,22 +20,6 @@ export default function Footer() {
             Redefining the canine experience through a village-inspired
             sanctuary. Every dog is treated like a legend.
           </p>
-          <div className="flex gap-2">
-            <button
-              type="button"
-              aria-label="Share"
-              className="min-w-[48px] min-h-[48px] w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-forest transition-all"
-            >
-              <span className="material-symbols-outlined text-2xl">share</span>
-            </button>
-            <a
-              href="mailto:hello@neolokam.com"
-              aria-label="Email us"
-              className="min-w-[48px] min-h-[48px] w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-forest transition-all"
-            >
-              <span className="material-symbols-outlined text-2xl">mail</span>
-            </a>
-          </div>
         </div>
         <div>
           <h4 className="font-bold mb-4 sm:mb-6 text-primary text-sm sm:text-base">
