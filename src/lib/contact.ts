@@ -14,6 +14,7 @@ export const APP_CONTACT = {
   },
   address: {
     lines: [
+      "Neolokam",
       "KP 21/385-B, Varahalakshmi",
       "Edathara, Kollodu, Kollodu PO",
       "Via Malayiinkil, Thiruvananthapuram",

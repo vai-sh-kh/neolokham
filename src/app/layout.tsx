@@ -38,12 +38,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     siteName: SITE_NAME,
-    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "Neolokam Pet Paradise" }],
+    images: [
+      {
+        url: DEFAULT_OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: "Neolokam Pet Paradise",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Neolokam | Cage-Free Dog Boarding & 1.5 Acre Park in Trivandrum",
-    description: "Experience a real dog vacation. Cage-free boarding, swimming, nature walks on a 1.5-acre tropical farm in Trivandrum.",
+    description:
+      "Experience a real dog vacation. Cage-free boarding, swimming, nature walks on a 1.5-acre tropical farm in Trivandrum.",
+  },
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
   },
   robots: {
     index: true,

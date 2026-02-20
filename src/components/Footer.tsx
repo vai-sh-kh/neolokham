@@ -66,14 +66,6 @@ export default function Footer() {
                 Safety Protocols
               </Link>
             </li>
-            <li>
-              <Link
-                className="block py-3 min-h-[48px] flex items-center hover:text-white transition-colors text-base"
-                href="#"
-              >
-                Careers
-              </Link>
-            </li>
           </ul>
         </div>
         <div>
