@@ -1,1 +1,420 @@
-#about
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0df20d",
+                        "poster-red": "#d92b2b",
+                        "poster-yellow": "#facc15",
+                        "poster-blue": "#1e40af",
+                        "wood-brown": "#8b4513",
+                        "paper-cream": "#fdf6e3",
+                        "background-light": "#f5f8f5",
+                        "background-dark": "#102210",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .skeleton-icon {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display bg-[url('https://www.transparenttextures.com/patterns/parchment.png')]">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="flex items-center justify-between border-b border-primary/10 px-6 py-4 lg:px-20 bg-background-light/80 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-background-dark">
+<span class="material-symbols-outlined text-2xl font-bold">eco</span>
+</div>
+<h2 class="text-xl font-extrabold tracking-tight">Neolokam</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">About</a>
+<a class="text-primary text-sm font-extrabold" href="#">Visit Us</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<button class="bg-primary text-background-dark px-5 py-2.5 rounded-lg font-bold text-sm hover:brightness-110 transition-all shadow-lg shadow-primary/20">
+                Book Appointment
+            </button>
+</header>
+<main class="flex-1 max-w-7xl mx-auto w-full px-6 py-12 lg:px-20">
+<!-- Hero Section -->
+<section class="mb-16 text-center">
+<div class="relative inline-block px-12 py-8 bg-[#8b4513] border-8 border-[#5d2e0a] rounded-sm shadow-[0_20px_50px_rgba(0,0,0,0.3)] transform -rotate-1">
+<div class="absolute -top-4 left-1/4 w-2 h-8 bg-slate-400 rounded-full"></div>
+<div class="absolute -top-4 right-1/4 w-2 h-8 bg-slate-400 rounded-full"></div>
+<span class="block text-white font-black text-xl mb-2 italic">Paws &amp; Relax...</span>
+<h1 class="text-5xl lg:text-7xl font-black text-poster-yellow drop-shadow-lg uppercase tracking-tighter mb-2">
+            Neolokam
+        </h1>
+<div class="bg-poster-blue text-white py-2 px-6 inline-block font-black text-2xl mb-4 transform skew-x-[-10deg]">
+            DOG PARK &amp; STAYCATION
+        </div>
+<div class="bg-paper-cream text-slate-900 font-bold p-3 rounded shadow-inner">
+<p class="text-xl">Visiting Time: <span class="text-poster-red">6AM - 9AM</span></p>
+<p class="text-lg">Contact: <span class="underline">7736390719</span></p>
+</div>
+</div>
+</section>
+<div class="grid lg:grid-cols-2 gap-16 items-start">
+<!-- Rules Column -->
+<section class="space-y-8"><div class="bg-[#a0522d] p-1 border-4 border-[#5d2e0a] shadow-2xl rounded-sm">
+<div class="bg-[#fdf6e3] p-8 border-4 border-[#5d2e0a] relative">
+<div class="absolute top-0 left-0 w-full h-2 bg-black/10"></div>
+<div class="bg-poster-red text-white py-3 px-6 -mx-10 mb-8 transform -rotate-1 text-center shadow-lg">
+<h2 class="text-2xl lg:text-3xl font-black uppercase tracking-widest">GUIDELINES FOR STAYCATION &amp; PARK USAGE</h2>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-4 border-b-2 border-dotted border-slate-300 pb-4">
+<span class="text-poster-blue material-symbols-outlined font-black">check_circle</span>
+<p class="font-black text-xl text-slate-800 uppercase">Rabies &amp; Vaccination Required!</p>
+</div>
+<div class="flex items-start gap-4 border-b-2 border-dotted border-slate-300 pb-4">
+<span class="text-poster-blue material-symbols-outlined font-black">check_circle</span>
+<p class="font-black text-xl text-slate-800 uppercase">Collar Up, No Harness Hokey Pokey!</p>
+</div>
+<div class="flex items-start gap-4 border-b-2 border-dotted border-slate-300 pb-4">
+<span class="text-poster-blue material-symbols-outlined font-black">check_circle</span>
+<p class="font-black text-xl text-slate-800 uppercase">Bring Poop Scooper &amp; Poop Bags</p>
+</div>
+<div class="flex items-start gap-4 border-b-2 border-dotted border-slate-300 pb-4">
+<span class="text-poster-blue material-symbols-outlined font-black">check_circle</span>
+<p class="font-black text-xl text-slate-800 uppercase text-poster-red">Tough Leash Only - No Wimpy Strings!</p>
+</div>
+<div class="flex items-start gap-4 border-b-2 border-dotted border-slate-300 pb-4">
+<span class="text-poster-blue material-symbols-outlined font-black">check_circle</span>
+<p class="font-black text-xl text-slate-800 uppercase">Healthy &amp; Disease-Free Dogs</p>
+</div>
+<div class="flex items-start gap-4">
+<span class="text-poster-blue material-symbols-outlined font-black">check_circle</span>
+<p class="font-black text-xl text-slate-800 uppercase">Ticked Off? Use Tick Protection!</p>
+</div>
+</div>
+<div class="mt-12 bg-poster-yellow/20 p-4 border-2 border-poster-yellow rounded text-center">
+<p class="font-black text-slate-800">No Bowls, No Toys, No Pajamas - Just Your Dog &amp; Good Vibes!</p>
+</div>
+</div>
+</div></section>
+<!-- Lead Gen Form Column -->
+<section class="bg-[#fffdf0] p-8 lg:p-10 rounded-sm shadow-xl border-t-8 border-poster-red relative">
+<div class="mb-8"><div class="bg-poster-red text-white py-2 px-4 inline-block font-black uppercase text-sm mb-4 transform -skew-x-12">
+    Honesty Alert!
+</div>
+<h2 class="text-3xl font-black text-slate-900 mb-2">Be Clear About Your Dog's Behavior</h2>
+<p class="text-slate-600 font-medium">We beg you! Pretty please, with puppy dog eyes...</p></div>
+<form action="#" class="space-y-6">
+<div>
+<label class="block text-sm font-bold mb-2 uppercase tracking-wider text-slate-400">Dog's Name</label>
+<input class="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary transition-all text-lg font-medium" placeholder="e.g. Buster" type="text"/>
+</div>
+<div><label class="block text-sm font-black mb-4 uppercase tracking-wider text-slate-500">Is your dog a...</label>
+<div class="grid grid-cols-3 gap-3">
+<label class="cursor-pointer group">
+<input checked="" class="peer hidden" name="temperament" type="radio"/>
+<div class="border-4 border-slate-200 peer-checked:border-poster-yellow peer-checked:bg-poster-yellow/10 p-4 rounded-xl text-center transition-all flex flex-col items-center gap-2">
+<div class="text-2xl">😇</div>
+<span class="font-black text-slate-800 group-hover:scale-110 transition-transform">Angel</span>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input class="peer hidden" name="temperament" type="radio"/>
+<div class="border-4 border-slate-200 peer-checked:border-poster-red peer-checked:bg-poster-red/10 p-4 rounded-xl text-center transition-all flex flex-col items-center gap-2">
+<div class="text-2xl">😈</div>
+<span class="font-black text-slate-800 group-hover:scale-110 transition-transform">Devil?</span>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input class="peer hidden" name="temperament" type="radio"/>
+<div class="border-4 border-slate-200 peer-checked:border-poster-blue peer-checked:bg-poster-blue/10 p-4 rounded-xl text-center transition-all flex flex-col items-center gap-2">
+<div class="text-2xl">😭</div>
+<span class="font-black text-slate-800 group-hover:scale-110 transition-transform text-xs">Drama Queen?</span>
+</div>
+</label>
+</div></div>
+<div>
+<label class="block text-sm font-bold mb-2 uppercase tracking-wider text-slate-400">Tell us more about your superstar</label>
+<textarea class="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary transition-all text-lg font-medium" placeholder="Favorite snacks, weird habits, or sworn enemies..." rows="4"></textarea>
+</div>
+<button class="w-full text-background-dark py-4 rounded-xl font-black text-xl hover:scale-[1.02] active:scale-[0.98] transition-all shadow-lg shadow-primary/30 mt-4 bg-poster-red text-white hover:bg-red-700" type="submit">
+                            Send Superstar Profile
+                        </button>
+</form>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark text-white py-16 px-6 lg:px-20 mt-20">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="max-w-sm">
+<div class="flex items-center gap-3 mb-6">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-background-dark">
+<span class="material-symbols-outlined text-2xl font-bold">eco</span>
+</div>
+<h2 class="text-2xl font-extrabold tracking-tight">Neolokam</h2>
+</div>
+<p class="text-slate-400 leading-relaxed mb-6">
+                        The world's first dog-centric carbon capture farm. We're growing trees, catching carbon, and hosting the best trail walks in the country.
+                    </p>
+</div>
+<div class="space-y-8">
+<div>
+<h4 class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Our Location</h4>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<p class="text-lg">Neolokam Carbon Capture Farm,<br/>Trivandrum, Kerala.</p>
+</div>
+<div class="mt-4 rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all w-full h-32 bg-slate-800">
+<img alt="Map location of the farm" class="w-full h-full object-cover opacity-50" data-alt="A stylized map showing the farm location in Trivandrum" data-location="Trivandrum" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArHCzHY5qaQqwN2d1QNUSLhN_W0Br0dZFKFPZuv_VgH3773au3cT6lK9ao9EaQL-SPWzT4Ucaq41oGotCnshLpsl2kZ7MPTmgDhMn71nrd6CuDQ-ahSlM5pej7mU1JIQ0nANnU3IpFR2FSEdAMbj0Qyt_D3moUsk0idt93x2H1g1WOPVD3zv1xT2hG-7l4ep_RyTCCXa2WX4DhtRKtHH8uOvcZb9uuPAjGLgfaBqApeeniU9EF0ziLMN47BlpnooQpnljqXS-PON7f"/>
+</div>
+</div>
+</div>
+<div class="space-y-8">
+<div>
+<h4 class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Contact Us</h4>
+<a class="flex items-center gap-4 group" href="tel:7736390719">
+<div class="size-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary transition-colors group-hover:text-background-dark">
+<span class="material-symbols-outlined">call</span>
+</div>
+<p class="text-2xl font-black group-hover:text-primary transition-colors">7736390719</p>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto border-t border-slate-800 mt-16 pt-8 flex justify-between items-center text-slate-500 text-sm">
+<p>© 2024 Neolokam Farm. All dogs are good dogs.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms</a>
+</div>
+
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'neolokam-green': '#1b4332',
+            'neolokam-accent': '#2d6a4f',
+            'neolokam-text': '#2b2d42',
+            'neolokam-brown': '#582f0e',
+            'neolokam-paper': '#e9edc9',
+          },
+          fontFamily: {
+            'serif': ['Georgia', 'serif'],
+            'sans': ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-backgrounds">/* Using a lush forest background similar to the provided images */
+.bg-forest-overlay {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.85)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuD2hf0zT-BEaRVDJlZ84WM-z9JB4Gs2iKMI0tERo_SMCtOsR9iNY7nFCyNiYZjne8KZMo3yNDA0s5scuns4xOU0k8KmAzl3jeG5pE66yz7L5Q2v-udLz6yJILq5QNkeBLw9b98lvN13RDm9oJsHO7NCXPG8Cjgmn8RzKdJlALr-jlH6BT8UCaCqcKuiZcFUV6l0gk8C8WVNCaLxcFjBA60vqi6WXBKHCzN2P1nT6tWkXIfF_Kry3fBcZjyuy5iexjhNyI8uGNgELFG9);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center
+    }
+.textured-paper {
+    background-color: #f4f1de;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDLF1h_dYbw0seqFyRqG2FMdccalDz0Pug7CTaEKKjsyMAYkuBMsCgqKtkYq2dsYlnmVGnkk5g0_1_yZXT7ILdLVcut0zZWHqf1YOK8vWkeb_-zy619i2yDCtAVjYiu0bpuSes_SoNBTALx9JADTJzs22Efn6WU4mURfmCFqn1CftYse_mYbkvexqijJpfhDvZzLPWYSph979DkeeAfROeXQkL9We68uKPqCaFf9pMzZfPyy1mwqyq1hpNaKoV4xA-6s7eXHP6zzAAW);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1)
+    }
+.brush-stroke-green {
+    background-color: #1b4332;
+    clip-path: polygon(2% 15%, 98% 5%, 100% 85%, 0% 95%);
+    color: white
+    }
+.border-accent {
+    border-left: 4px solid #582f0e
+    }</style>
+</head>
+<body class="bg-forest-overlay font-sans text-neolokam-text min-h-screen">
+<!-- BEGIN: MainHeader -->
+<header class="py-12 px-4 flex flex-col items-center text-center">
+<div class="mb-6" data-purpose="logo-container">
+<!-- Representing the logo structure from IMAGE_17 -->
+<div class="flex justify-center mb-2">
+<svg class="w-16 h-16 text-neolokam-green" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"></path>
+</svg>
+</div>
+<h1 class="text-5xl md:text-6xl font-bold tracking-widest text-neolokam-green uppercase">NEOLOKAM</h1>
+<p class="text-xl font-medium tracking-tight mt-2 text-neolokam-accent">Agro • Animal Care • Wellness • Sustainability</p>
+</div>
+<div class="brush-stroke-green px-8 py-3 max-w-2xl mx-auto shadow-lg">
+<p class="text-lg md:text-xl font-semibold italic">An Independently Developed, Future-Ready Ecological Initiative</p>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: MainContent -->
+<main class="max-w-5xl mx-auto px-4 pb-20">
+<!-- Section: About the Initiative -->
+<section class="textured-paper p-8 md:p-12 mb-12 rounded-sm border-t-8 border-neolokam-brown" data-purpose="about-section">
+<div class="flex flex-col md:flex-row gap-8">
+<div class="flex-1">
+<h2 class="text-2xl font-bold border-b-2 border-neolokam-brown pb-2 mb-6 uppercase tracking-wider">What is NEOLOKAM?</h2>
+<p class="text-lg leading-relaxed mb-6">
+            NEOLOKAM is a carbon capture agricultural land developed through dense planting of tropical fruit trees and native species, designed to absorb atmospheric carbon dioxide, restore soil health, and increase biodiversity.
+          </p>
+<p class="text-neolokam-brown font-bold italic text-xl mb-8">
+            "The land is not commercial construction — it is living farmland."
+          </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+<div class="bg-neolokam-green text-white p-4 text-center rounded">
+<span class="block text-3xl font-bold">1 Acre</span>
+<span class="text-xs uppercase tracking-widest">Tropical Fruit Trees</span>
+</div>
+<div class="bg-neolokam-accent text-white p-4 text-center rounded">
+<span class="block text-3xl font-bold">1.5 Acre</span>
+<span class="text-xs uppercase tracking-widest">Pet Paradise</span>
+</div>
+<div class="bg-neolokam-brown text-white p-4 text-center rounded">
+<span class="block text-3xl font-bold">Zero</span>
+<span class="text-xs uppercase tracking-widest">Pollution / Concrete</span>
+</div>
+</div>
+</div>
+<div class="md:w-1/3 flex flex-col gap-4">
+<!-- Polaroids inspired by IMAGE_17 -->
+<div class="bg-white p-2 shadow-xl rotate-2 transform hover:rotate-0 transition-transform duration-300">
+<img alt="Lush forest path" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgaPKpjIskTWmqvmXzMrhG8426s6NCPuVG8c6VoErxpp5XLlRvxtcx8LS-JVuQQMtVQGWJiPs-unUgqZv7DeDf4gcpsiwafs9qMunU5tTbp7rUnvZZP5JS3DKgqhOnRnL2nUOeDmB6V13wvUYGrs_QUCcjyTVQ1vv-Xn1c5CnraQ4MokfWJ4weJjh5uga3gVKtUgcAtn44Z2Mka9SO8LfTatGGi-YNXc2mUXpSLdB6lML4P0qqscbuvQ0-g6G_tPIjh_aJg-Z66Tv-"/>
+<p class="pt-2 text-center font-serif italic text-sm text-gray-600">Living Farmland</p>
+</div>
+<div class="bg-white p-2 shadow-xl -rotate-3 transform hover:rotate-0 transition-transform duration-300">
+<img alt="Carbon capture trees" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhx6bxAejSdzZfn3KHMQ4CIGreUH7wAdSOphCHcNJ_GVKRfeFIqw35UTH4AVpaprXtS4jZm_sDKoDWgjF8TgvTlqKX12PKFlvhJG0VxgjsP5Q1o2R1bzjF8v9fh6Di8i-1WoYEEJIP1UywCAL7TnHRemo_rNXaAZyYaEcnYaLznncgBy-9IZ6YlCva-2sLyQkDlRnxbAiF4hWVVog2oPNIeFY4hSbnb_0DyFHWVHa95MjvysgKGoexLvyrhN_AHDUlpKCHkwaTFR1z"/>
+<p class="pt-2 text-center font-serif italic text-sm text-gray-600">Ecological Focus</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Activities & Philosophy -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Environmental Activities -->
+<section class="textured-paper p-8 rounded-sm" data-purpose="environmental-activities">
+<h3 class="text-xl font-bold text-neolokam-green border-b border-neolokam-green/30 pb-2 mb-6 uppercase">Our Environmental Activities</h3>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="text-neolokam-accent mt-1">🌱</span>
+<p><strong>Carbon Capture:</strong> Planting and maintaining high-density tropical fruit trees.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-neolokam-accent mt-1">🌿</span>
+<p><strong>Native Planting:</strong> Increasing soil carbon storage through natural ground cover.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-neolokam-accent mt-1">💧</span>
+<p><strong>Rainwater Absorption:</strong> Permeable land surfaces for reduced runoff and groundwater recharge.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-neolokam-accent mt-1">🦋</span>
+<p><strong>Biodiversity Preservation:</strong> Creating habitats for indigenous flora and fauna.</p>
+</li>
+</ul>
+<div class="mt-8 p-4 bg-neolokam-green/10 italic text-sm text-neolokam-green border-l-4 border-neolokam-green">
+          Trees permanently capture carbon while improving microclimate and groundwater recharge.
+        </div>
+</section>
+<!-- Why Dogs? Philosophy -->
+<section class="textured-paper p-8 rounded-sm" data-purpose="canine-philosophy">
+<h3 class="text-xl font-bold text-neolokam-brown border-b border-neolokam-brown/30 pb-2 mb-6 uppercase">Nature-Based Canine Care</h3>
+<p class="text-2xl font-serif italic text-neolokam-brown mb-6">"Protect the land by using it gently."</p>
+<p class="mb-4 font-semibold text-neolokam-accent">Why Dogs are Part of This Land:</p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="text-neolokam-brown mt-1">🐾</span>
+<p><strong>Low-Impact:</strong> Managed in open, natural conditions, not cages or buildings.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-neolokam-brown mt-1">🐾</span>
+<p><strong>Mutual Benefit:</strong> Canine activities help fund the maintenance of trees and farmland.</p>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-neolokam-brown mt-1">🐾</span>
+<p><strong>Non-Industrial:</strong> Conducted without altering soil structure or using concrete play areas.</p>
+</li>
+</ul>
+<p class="mt-6 text-sm italic">NEOLOKAM proves that carbon capture farming and responsible animal care can coexist without harming ecology.</p>
+</section>
+</div>
+<!-- Section: Operational Details -->
+<section class="mt-12 textured-paper p-6 md:p-8 rounded-sm border-b-8 border-neolokam-green" data-purpose="governance">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-sm uppercase font-bold tracking-tight">
+<div class="border-l-2 border-neolokam-brown pl-4">
+<p class="text-gray-500 mb-1">Location</p>
+<p>Neolokam Carbon Capture Farm</p>
+</div>
+<div class="border-l-2 border-neolokam-brown pl-4">
+<p class="text-gray-500 mb-1">Land Type</p>
+<p>Agricultural / Green Cover</p>
+</div>
+<div class="border-l-2 border-neolokam-brown pl-4">
+<p class="text-gray-500 mb-1">Primary Goal</p>
+<p>Environmental Stewardship</p>
+</div>
+<div class="border-l-2 border-neolokam-brown pl-4">
+<p class="text-gray-500 mb-1">Alignment</p>
+<p>Sustainable Development</p>
+</div>
+</div>
+</section>
+</main>
+<!-- END: MainContent -->
+<!-- BEGIN: MainFooter -->
+<footer class="bg-neolokam-green text-white py-16 px-4">
+<div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-center md:text-left">
+<h2 class="text-3xl font-bold tracking-widest uppercase mb-2">NEOLOKAM</h2>
+<p class="italic text-neolokam-paper/80">A Nature-Aligned Initiative Built for the Future</p>
+</div>
+<div class="flex items-center gap-6" data-purpose="footer-info">
+<div class="text-right hidden md:block">
+<p class="uppercase text-xs tracking-widest font-bold">Scan for more info</p>
+<p class="text-neolokam-paper/60 text-[10px]">Ecology • Welfare • Resilience</p>
+</div>
+<!-- Placeholder for QR Code style element from Image 17 -->
+<div class="w-20 h-20 bg-white p-1 rounded">
+<div class="w-full h-full bg-neolokam-green flex items-center justify-center p-1">
+<div class="w-full h-full bg-white flex flex-wrap gap-0.5 p-0.5">
+<!-- Visual simulation of QR -->
+<div class="w-4 h-4 bg-black"></div><div class="w-4 h-4 bg-white"></div><div class="w-4 h-4 bg-black"></div><div class="w-4 h-4 bg-black"></div>
+<div class="w-4 h-4 bg-white"></div><div class="w-4 h-4 bg-black"></div><div class="w-4 h-4 bg-white"></div><div class="w-4 h-4 bg-white"></div>
+<div class="w-4 h-4 bg-black"></div><div class="w-4 h-4 bg-white"></div><div class="w-4 h-4 bg-black"></div><div class="w-4 h-4 bg-black"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center text-xs text-neolokam-paper/40 uppercase tracking-[0.2em]">
+      © 2023 NEOLOKAM • Focused on Environmental Responsibility &amp; Carbon Capture
+    </div>
+</footer>
+<!-- END: MainFooter -->
+</body></html>

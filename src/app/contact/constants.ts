@@ -1,0 +1,1 @@
+export const WHATSAPP_NUMBER = "9778018675";

@@ -1,0 +1,100 @@
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer className="bg-forest py-12 sm:py-16 px-4 sm:px-6 text-white border-t-4 md:border-t-8 border-wood">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="col-span-1 sm:col-span-2">
+          <Link href="/" className="flex items-center gap-3 mb-6">
+            <div className="bg-primary p-2 rounded-lg text-forest">
+              <span className="material-symbols-outlined text-2xl sm:text-3xl">
+                pets
+              </span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-[800] tracking-tighter uppercase">
+              Neolokam
+            </h2>
+          </Link>
+          <p className="text-base text-slate-400 max-w-sm mb-8 leading-relaxed">
+            Redefining the canine experience through a village-inspired
+            sanctuary. Every dog is treated like a legend.
+          </p>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              aria-label="Share"
+              className="min-w-[48px] min-h-[48px] w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-forest transition-all"
+            >
+              <span className="material-symbols-outlined text-2xl">share</span>
+            </button>
+            <a
+              href="mailto:hello@neolokam.com"
+              aria-label="Email us"
+              className="min-w-[48px] min-h-[48px] w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-forest transition-all"
+            >
+              <span className="material-symbols-outlined text-2xl">mail</span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 className="font-bold mb-4 sm:mb-6 text-primary text-sm sm:text-base">
+            VILLAGE LINKS
+          </h4>
+          <ul className="space-y-1 text-slate-400">
+            <li>
+              <Link
+                className="block py-3 min-h-[48px] flex items-center hover:text-white transition-colors text-base"
+                href="/about"
+              >
+                Our Ethos
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="block py-3 min-h-[48px] flex items-center hover:text-white transition-colors text-base"
+                href="#"
+              >
+                Success Stories
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="block py-3 min-h-[48px] flex items-center hover:text-white transition-colors text-base"
+                href="#"
+              >
+                Safety Protocols
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="block py-3 min-h-[48px] flex items-center hover:text-white transition-colors text-base"
+                href="#"
+              >
+                Careers
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="font-bold mb-4 sm:mb-6 text-primary text-sm sm:text-base">
+            VISIT US
+          </h4>
+          <p className="text-slate-400 text-base leading-relaxed mb-4">
+            The Village, Sector 12
+            <br />
+            Pet Paradise Road
+            <br />
+            Bangalore, KA 560102
+          </p>
+          <div className="flex items-center gap-2 text-primary font-bold">
+            <span className="material-symbols-outlined">call</span>
+            +91 98765 43210
+          </div>
+        </div>
+      </div>
+      <div className="max-w-7xl mx-auto mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/10 text-center text-slate-500 text-sm px-4">
+        © 2024 Neolokam Canine Resort. Designed for the Living Superstars.
+      </div>
+    </footer>
+  );
+}

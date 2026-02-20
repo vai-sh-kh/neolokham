@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Neolokam | The Ultimate Canine Resort</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0df20d",
+                        "forest": "#102210",
+                        "cream": "#fdfaf1",
+                        "wood": "#4a3728",
+                        "background-light": "#f5f8f5",
+                        "background-dark": "#102210",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>.paper-texture {
+    background-color: #fdfaf1;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCnGIZI5LuELRhxFJcYf7v-6xgkoJUfmHUWNdepXYERERmBb7fATuLInaOmLRD2pUNMwmz2kJPOPPze9eyoHoB7r8TRekaz-ZgDHu34Q2gAl51bxGmJmzaWWWAjOLyIErjG7-U7vf-_Wf1tU3jNQ1RsN0Fgb-Vb5QDbpHqYILO0X5KX_6gQO33vYqPszZQYgPa8R8lneGlF5q4rYuXp1BWoZRzoQ42bMHUrv6eF4z2gPIXZokdgQhh-C3uxpbO1CyZyEcfXP3XyoDs9)
+    }
+.wood-border {
+    border: 8px solid #4a3728;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2)
+    }
+.hero-gradient {
+    background: linear-gradient(rgba(16, 34, 16, 0.8), rgba(16, 34, 16, 0.4)), url(IMAGE_18);
+    background-size: cover;
+    background-position: center
+    }
+.card-hover:hover {
+    transform: translatey(-5px);
+    transition: all 0.3s ease
+    }</style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 paper-texture border-b-4 border-wood px-6 py-4 shadow-md">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="bg-forest p-2 rounded-lg text-primary">
+<span class="material-symbols-outlined text-3xl">pets</span>
+</div>
+<h1 class="text-2xl font-800 tracking-tighter text-forest uppercase">Neolokam</h1>
+</div>
+<div class="hidden md:flex items-center gap-8 font-semibold text-forest/80">
+<a class="hover:text-primary transition-colors" href="#">The Village</a>
+<a class="hover:text-primary transition-colors" href="#">Stays</a>
+<a class="hover:text-primary transition-colors" href="#">Activities</a>
+<a class="hover:text-primary transition-colors" href="#">Membership</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-forest px-6 py-2.5 rounded-lg font-bold shadow-[4px_4px_0px_0px_#4a3728] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all">
+                    BOOK A STAY
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden border-b-8 border-wood">
+<div class="absolute inset-0">
+<img alt="Neolokam Tropical Paradise" class="w-full h-full object-cover" src="{{DATA:IMAGE:IMAGE_32}}"/>
+<div class="absolute inset-0 bg-gradient-to-b from-forest/40 via-transparent to-forest/60"></div>
+</div>
+<div class="relative z-10 text-center px-4 max-w-4xl">
+<div class="bg-forest/70 backdrop-blur-md p-8 md:p-12 rounded-3xl border-2 border-primary/30 shadow-2xl">
+<div class="inline-block px-4 py-1 bg-primary/20 border border-primary/30 rounded-full text-primary font-bold mb-6 tracking-widest text-xs uppercase">
+                EST. 2024 • THE CANINE PARADISE
+            </div>
+<h1 class="text-5xl md:text-7xl font-800 text-white mb-6 leading-[1.1]">
+                Neolokam: The Ultimate <span class="text-primary italic font-serif">Canine Resort</span>
+</h1>
+<p class="text-lg md:text-xl text-slate-200 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                A 1.5 Acre Pet Paradise where nature meets luxury. Immerse your companion in a curated village atmosphere designed for the modern superstar.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-forest px-10 py-4 rounded-xl font-800 text-lg flex items-center justify-center gap-2 hover:bg-white transition-all shadow-xl">
+<span class="material-symbols-outlined">explore</span>
+                    EXPLORE THE VILLAGE
+                </button>
+<button class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-4 rounded-xl font-800 text-lg hover:bg-white/20 transition-all">
+                    WATCH TOUR
+                </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="py-24 px-6 paper-texture">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 text-center">
+<h2 class="text-4xl font-800 text-forest mb-4">Village Services</h2>
+<div class="w-24 h-1.5 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Boarding -->
+<div class="group card-hover bg-white rounded-2xl overflow-hidden shadow-lg border-2 border-forest/5 p-2">
+<div class="aspect-square rounded-xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Cage-free canine boarding illustration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD65qElhqAsnIHRKqYlAcXw5h-WiaN-W7L7rqcaXPaKP-K2DukJCNBng3zXh9S_NVEJlnVWZQZ0qHL6eYVmVYTckBaZRXixA6fAQCwBr35nbbpD1evSZsh4KzVHv25AGOjsCvBibmm8fYq8Qi8-hinmOWeqIiGjc_z2tDMKXD4HDrIibgH9m7iohMUQpcrsu609GBCcZKslNY-hRUQX0HqX2BItIsdDBLoFdFFmGdCjuOzSDPxz3PFyK4qmOP6m__zfdGzcSWGXVlzG"/>
+<div class="absolute top-4 left-4 bg-forest text-primary p-2 rounded-lg">
+<span class="material-symbols-outlined">home</span>
+</div>
+</div>
+<div class="px-4 pb-6">
+<h3 class="text-xl font-bold text-forest mb-2">Boarding (Cage-free)</h3>
+<p class="text-slate-600 text-sm leading-relaxed">Village-style living where every dog enjoys freedom in a safe, monitored rustic environment.</p>
+</div>
+</div>
+<!-- Swimming -->
+<div class="group card-hover bg-white rounded-2xl overflow-hidden shadow-lg border-2 border-forest/5 p-2">
+<div class="aspect-square rounded-xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Dog swimming in mineral pool illustration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2LqOBrsKvz_ATNF5r2L1UAAzLLJ409DYWls0YHJNb8CkY5NeXqTch3AL-iOIV_1n_eYhIxZB-DL9OSJ7w3HNYJVwWZlqA0cauxYBtTc7K_QnPPI7gGdyuV9SJj5HCrY276t1azyDZyxBZEtsIZOS0iXCrKeuxN49l9MoIt9I_oFF5F4hpHTuierTyNM0Z_7Rk_DpSGKUM891i_kfr4e831ciC6yMRtR4ed88IZ5z27zdwVYX5djgbnRJlG9zzYA9BV6wzESADqQ2v"/>
+<div class="absolute top-4 left-4 bg-forest text-primary p-2 rounded-lg">
+<span class="material-symbols-outlined">pool</span>
+</div>
+</div>
+<div class="px-4 pb-6">
+<h3 class="text-xl font-bold text-forest mb-2">Swimming</h3>
+<p class="text-slate-600 text-sm leading-relaxed">Paw-sitively refreshing mineral pools designed for joint health and pure aquatic joy.</p>
+</div>
+</div>
+<!-- Training -->
+<div class="group card-hover bg-white rounded-2xl overflow-hidden shadow-lg border-2 border-forest/5 p-2">
+<div class="aspect-square rounded-xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Professional canine training session illustration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBQ6WsQQh2Nz8KMvz9GFZR9yP-eHyD0R8Gi5Gv9I7Tgw_ZfINwHTiYZqNNQHW9lotrmZVHdVp4aENiW3QH6Gvl2GB-L_tdsyt11jGVKX8OLXUt2RU74cuwbpLDXN2Q0fc3wCNBrpgwZ_EyNYh9hgqyRvvN2PLnNldtZBhATANF9umnhILxrgz_savX6-t7Mgpkm9fvhzgaks10phFvEJHH1e87zsTLgeka2xl46oJS09CgxWHTXnH4zpm3dv7XBozyknlP7o55T_oy"/>
+<div class="absolute top-4 left-4 bg-forest text-primary p-2 rounded-lg">
+<span class="material-symbols-outlined">school</span>
+</div>
+</div>
+<div class="px-4 pb-6">
+<h3 class="text-xl font-bold text-forest mb-2">Training</h3>
+<p class="text-slate-600 text-sm leading-relaxed">Character building for the modern canine. Positive reinforcement meets village wisdom.</p>
+</div>
+</div>
+<!-- Grooming -->
+<div class="group card-hover bg-white rounded-2xl overflow-hidden shadow-lg border-2 border-forest/5 p-2">
+<div class="aspect-square rounded-xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Premium canine grooming styling illustration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0p-F-3C-b6vPnT9QrEWbzuRTRr2CpnRkqym5xy_q-Qd61_jAEqTnuwG5W7QxQcLmdRlRdMcnNSmsAH44YOhmMwJ5pILH-O1Uuv82L2SwQT6Ypt4fA9WDrH_aqVzzEXej-H_Q2oeBUTyUhp7aPCKObNzXFP1YCykyX7-q89FM9dJA6SfD9uJDr2KgRGh8AgbExxTgyA35nwYGJMAoeVCMhz6PZH_rjkpaQ7fF6x80n-I44WN42IuxuvykuLqTgrssNXHAD2lZ_fWWh"/>
+<div class="absolute top-4 left-4 bg-forest text-primary p-2 rounded-lg">
+<span class="material-symbols-outlined">content_cut</span>
+</div>
+</div>
+<div class="px-4 pb-6">
+<h3 class="text-xl font-bold text-forest mb-2">Home Grooming</h3>
+<p class="text-slate-600 text-sm leading-relaxed">Instagram-ready styling delivered at your doorstep or in our luxury salon huts.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reality Check Banner -->
+<section class="bg-forest py-20 px-6 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="max-w-5xl mx-auto relative z-10 border-2 border-primary/20 p-12 rounded-3xl bg-forest/50 backdrop-blur-sm">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="text-primary">
+<span class="material-symbols-outlined text-[120px] opacity-80">warning</span>
+</div>
+<div>
+<h2 class="text-primary font-bold tracking-widest text-sm mb-4 uppercase">The Neolokam Manifesto</h2>
+<h3 class="text-4xl md:text-5xl font-800 text-white mb-6 leading-tight">
+                        Your dog is a <span class="text-primary underline decoration-wood decoration-4 underline-offset-8">living superstar</span>, not a suitcase.
+                    </h3>
+<p class="text-slate-300 text-lg leading-relaxed mb-8">
+                        We reject the clinical, storage-unit approach to pet care. At Neolokam, we demand a partnership. We handle the luxury, you handle the responsibility. No shortcuts, no cages, just pure village living.
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex items-center gap-3 text-white/80">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Mandatory Health Clearance</span>
+</div>
+<div class="flex items-center gap-3 text-white/80">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span>Transparent Parent Policy</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Membership Section -->
+<section class="py-24 px-6 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<span class="text-forest/60 font-bold uppercase tracking-widest text-sm">Join the Elite</span>
+<h2 class="text-5xl font-800 text-forest mt-2 mb-4">Exclusive Village Memberships</h2>
+<p class="text-slate-500 max-w-xl mx-auto">Select a tier that matches your superstar's lifestyle. Premium care, predictable pricing.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Tier 1 -->
+<div class="paper-texture wood-border rounded-2xl p-8 flex flex-col items-center text-center">
+<span class="bg-forest text-primary px-4 py-1 rounded-full text-xs font-bold mb-6">ESSENTIAL</span>
+<div class="text-5xl font-800 text-forest mb-2">₹11,111<span class="text-base font-normal text-slate-500">/mo</span></div>
+<p class="text-slate-600 mb-8 font-medium">Standard Village Access</p>
+<ul class="w-full space-y-4 mb-10 text-left">
+<li class="flex items-center gap-3 text-forest/80"><span class="material-symbols-outlined text-primary">done</span> 2 Days Boarding / Month</li>
+<li class="flex items-center gap-3 text-forest/80"><span class="material-symbols-outlined text-primary">done</span> 1 Mineral Pool Session</li>
+<li class="flex items-center gap-3 text-forest/80"><span class="material-symbols-outlined text-primary">done</span> Basic Health Report</li>
+</ul>
+<button class="w-full py-4 bg-wood text-cream font-bold rounded-xl hover:bg-forest transition-all">CHOOSE PLAN</button>
+</div>
+<!-- Tier 2 -->
+<div class="bg-forest rounded-3xl p-8 flex flex-col items-center text-center transform scale-105 shadow-2xl relative border-4 border-primary/30">
+<div class="absolute -top-4 bg-primary text-forest px-6 py-1 rounded-full text-sm font-black shadow-lg">MOST POPULAR</div>
+<span class="bg-primary/20 text-primary px-4 py-1 rounded-full text-xs font-bold mb-6">VILLAGER ELITE</span>
+<div class="text-5xl font-800 text-white mb-2">₹15,555<span class="text-base font-normal text-slate-400">/mo</span></div>
+<p class="text-slate-300 mb-8 font-medium">Enhanced Resort Comforts</p>
+<ul class="w-full space-y-4 mb-10 text-left">
+<li class="flex items-center gap-3 text-white/90"><span class="material-symbols-outlined text-primary">verified</span> 5 Days Boarding / Month</li>
+<li class="flex items-center gap-3 text-white/90"><span class="material-symbols-outlined text-primary">verified</span> 4 Mineral Pool Sessions</li>
+<li class="flex items-center gap-3 text-white/90"><span class="material-symbols-outlined text-primary">verified</span> 1 Styling Session / Month</li>
+<li class="flex items-center gap-3 text-white/90"><span class="material-symbols-outlined text-primary">verified</span> Priority Booking</li>
+</ul>
+<button class="w-full py-4 bg-primary text-forest font-black rounded-xl hover:scale-105 transition-all">JOIN THE VILLAGE</button>
+</div>
+<!-- Tier 3 -->
+<div class="paper-texture wood-border rounded-2xl p-8 flex flex-col items-center text-center">
+<span class="bg-forest text-primary px-4 py-1 rounded-full text-xs font-bold mb-6">ROYAL RESIDENT</span>
+<div class="text-5xl font-800 text-forest mb-2">₹22,222<span class="text-base font-normal text-slate-500">/mo</span></div>
+<p class="text-slate-600 mb-8 font-medium">The Ultimate Village Lifestyle</p>
+<ul class="w-full space-y-4 mb-10 text-left">
+<li class="flex items-center gap-3 text-forest/80"><span class="material-symbols-outlined text-primary">stars</span> 10 Days Boarding / Month</li>
+<li class="flex items-center gap-3 text-forest/80"><span class="material-symbols-outlined text-primary">stars</span> Unlimited Pool Access</li>
+<li class="flex items-center gap-3 text-forest/80"><span class="material-symbols-outlined text-primary">stars</span> Full Grooming Package</li>
+<li class="flex items-center gap-3 text-forest/80"><span class="material-symbols-outlined text-primary">stars</span> Dedicated Concierge</li>
+</ul>
+<button class="w-full py-4 bg-wood text-cream font-bold rounded-xl hover:bg-forest transition-all">GO ROYAL</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-forest py-16 px-6 text-white border-t-8 border-wood">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="bg-primary p-2 rounded-lg text-forest">
+<span class="material-symbols-outlined text-3xl">pets</span>
+</div>
+<h2 class="text-3xl font-800 tracking-tighter uppercase">Neolokam</h2>
+</div>
+<p class="text-slate-400 max-w-sm mb-8">
+                    Redefining the canine experience through a village-inspired sanctuary. Every dog is treated like a legend.
+                </p>
+<div class="flex gap-4">
+<div class="size-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-forest transition-all cursor-pointer">
+<span class="material-symbols-outlined">share</span>
+</div>
+<div class="size-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-forest transition-all cursor-pointer">
+<span class="material-symbols-outlined">mail</span>
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-primary">VILLAGE LINKS</h4>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Our Ethos</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Success Stories</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Safety Protocols</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-primary">VISIT US</h4>
+<p class="text-slate-400 leading-relaxed mb-4">
+                    The Village, Sector 12<br/>
+                    Pet Paradise Road<br/>
+                    Bangalore, KA 560102
+                </p>
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined">call</span>
+                    +91 98765 43210
+                </div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 text-center text-slate-500 text-sm">
+            © 2024 Neolokam Canine Resort. Designed for the Living Superstars.
+        </div>
+</footer>
+</body></html>
