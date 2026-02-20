@@ -362,51 +362,45 @@ export default function AboutPage() {
           <p className="text-center text-slate-700 font-bold mb-6">
             We group dogs based on temperament:
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 text-center">
-            <div className="group cursor-pointer hover:scale-105 transition-transform">
-              <div className="relative inline-block mb-2">
-                <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-poster-yellow text-slate-900 px-3 py-1 rounded-full font-bold text-sm">
-                  Calm &amp; Friendly
+          <div className="grid grid-cols-3 gap-3 sm:gap-8 text-center">
+            <div className="group cursor-pointer hover:scale-105 transition-transform flex flex-col items-center">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 bg-white rounded-full border-4 border-poster-yellow flex items-center justify-center mb-3">
+                <span className="material-symbols-outlined text-poster-yellow text-3xl sm:text-5xl">
+                  favorite
                 </span>
-                <div className="w-28 h-28 sm:w-40 sm:h-40 bg-white rounded-full border-4 border-poster-yellow overflow-hidden mx-auto flex items-center justify-center">
-                  <p className="p-2 text-xs sm:text-sm italic">
-                    Calm &amp; Friendly
-                  </p>
-                </div>
               </div>
-              <p className="font-black text-base sm:text-xl text-slate-800">
+              <p className="font-black text-sm sm:text-xl text-slate-800 mb-1">
                 The Saint
               </p>
+              <span className="bg-poster-yellow text-slate-900 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full font-bold text-[10px] sm:text-sm">
+                Calm &amp; Friendly
+              </span>
             </div>
-            <div className="group cursor-pointer hover:scale-105 transition-transform">
-              <div className="relative inline-block mb-2">
-                <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-poster-red text-white px-3 py-1 rounded-full font-bold text-sm">
-                  High Energy / Reactive
+            <div className="group cursor-pointer hover:scale-105 transition-transform flex flex-col items-center">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 bg-white rounded-full border-4 border-poster-red flex items-center justify-center mb-3">
+                <span className="material-symbols-outlined text-poster-red text-3xl sm:text-5xl">
+                  local_fire_department
                 </span>
-                <div className="w-28 h-28 sm:w-40 sm:h-40 bg-white rounded-full border-4 border-poster-red overflow-hidden mx-auto flex items-center justify-center">
-                  <p className="p-2 text-xs sm:text-sm italic">
-                    High Energy / Reactive
-                  </p>
-                </div>
               </div>
-              <p className="font-black text-base sm:text-xl text-slate-800">
+              <p className="font-black text-sm sm:text-xl text-slate-800 mb-1">
                 The Fireball
               </p>
+              <span className="bg-poster-red text-white px-2 sm:px-3 py-0.5 sm:py-1 rounded-full font-bold text-[10px] sm:text-sm">
+                High Energy
+              </span>
             </div>
-            <div className="group cursor-pointer hover:scale-105 transition-transform">
-              <div className="relative inline-block mb-2">
-                <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-poster-blue text-white px-3 py-1 rounded-full font-bold text-sm">
-                  Sensitive / Anxious
+            <div className="group cursor-pointer hover:scale-105 transition-transform flex flex-col items-center">
+              <div className="w-20 h-20 sm:w-36 sm:h-36 bg-white rounded-full border-4 border-poster-blue flex items-center justify-center mb-3">
+                <span className="material-symbols-outlined text-poster-blue text-3xl sm:text-5xl">
+                  stars
                 </span>
-                <div className="w-28 h-28 sm:w-40 sm:h-40 bg-white rounded-full border-4 border-poster-blue overflow-hidden mx-auto flex items-center justify-center">
-                  <p className="p-2 text-xs sm:text-sm italic">
-                    Sensitive / Anxious
-                  </p>
-                </div>
               </div>
-              <p className="font-black text-base sm:text-xl text-slate-800">
+              <p className="font-black text-sm sm:text-xl text-slate-800 mb-1">
                 The Star
               </p>
+              <span className="bg-poster-blue text-white px-2 sm:px-3 py-0.5 sm:py-1 rounded-full font-bold text-[10px] sm:text-sm">
+                Sensitive
+              </span>
             </div>
           </div>
           <div className="mt-8 bg-paper-cream p-4 border-2 border-poster-yellow/50 rounded-lg text-center">

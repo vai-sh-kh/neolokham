@@ -14,14 +14,14 @@ export const APP_CONTACT = {
   },
   address: {
     lines: [
-      "Neolokam Carbon Capture Farm",
-      "Chippara, Kollodu, Kulathoor",
-      "Udayanapuram PO, Trivandrum",
-      "Kerala 695071, India",
+      "KP 21/385-B, Varahalakshmi",
+      "Edathara, Kollodu, Kollodu PO",
+      "Via Malayiinkil, Thiruvananthapuram",
+      "PIN 695571, Killi Manali Mechira",
     ],
-    locality: "Trivandrum",
+    locality: "Thiruvananthapuram",
     region: "Kerala",
-    postalCode: "695071",
+    postalCode: "695571",
     country: "IN",
   },
   googleMapEmbedUrl:
