@@ -55,10 +55,12 @@ export default function Navbar() {
     <>
       <nav className="sticky top-0 z-50 w-full bg-gradient-to-r from-[#3a4538]/90 via-[#4a5542]/85 to-[#6b7356]/90 backdrop-blur-md border-b border-black/5">
         <div className="max-w-7xl mx-auto flex items-center justify-between h-16 md:h-18 px-4 sm:px-6 lg:px-8">
-          <Link href="/" className="flex items-center gap-3">
-            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-forest flex items-center justify-center text-primary">
-              <span className="material-symbols-outlined text-2xl">pets</span>
-            </div>
+          <Link href="/" className="flex items-center gap-2">
+            <img
+              src="/home-logo.jpeg"
+              alt="Neolokam"
+              className="h-10 w-auto object-contain"
+            />
             <h1 className="text-xl font-[800] tracking-tight text-slate-100 uppercase">
               NEOLOKAM
             </h1>
