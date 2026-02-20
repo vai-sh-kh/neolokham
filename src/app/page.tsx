@@ -37,14 +37,14 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden border-b-4 md:border-b-8 border-wood">
+      <section className="relative min-h-[70vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden border-b-4 md:border-b-8 border-wood">
         <div className="absolute inset-0">
           <img
-            alt="Neolokam Tropical Paradise"
-            className="w-full h-full object-cover"
-            src="/images/hero-tropical.jpg"
+            alt="Neolokam Home Banner"
+            className="w-full h-full object-cover object-center scale-[1.02]"
+            src="/images/home-banner.png"
           />
+          <div className="absolute inset-0 bg-black/30 md:bg-transparent"></div>
           <div className="absolute inset-0 bg-gradient-to-b from-forest/40 via-transparent to-forest/60"></div>
         </div>
         <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl">

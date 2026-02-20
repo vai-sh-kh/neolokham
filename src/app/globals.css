@@ -126,6 +126,8 @@
 html {
   -webkit-text-size-adjust: 100%;
   -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
@@ -135,6 +137,8 @@ body {
   background-color: var(--color-background-light);
   color: #0f172a;
   min-height: 100vh;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 /* Mobile menu overlay: prevent focus escape when open */
@@ -144,7 +148,8 @@ body {
 }
 
 /* Smooth transitions for interactive elements */
-a, button {
+a,
+button {
   transition-property: color, background-color, border-color, transform, opacity;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-duration: 0.2s;
