@@ -8,7 +8,8 @@ import { motion, AnimatePresence } from "motion/react";
 const NAV_LINKS = [
   { href: "/", label: "HOME" },
   { href: "/about", label: "ABOUT" },
-  { href: "/brochure", label: "BROCHURES" },
+  { href: "/brochure", label: "BROCHURE" },
+  { href: "/videos", label: "VIDEOS" },
   { href: "/contact", label: "CONTACT" },
 ];
 
@@ -77,9 +78,8 @@ export default function Navbar() {
                     linkRefs.current[i] = el;
                   }}
                   href={link.href}
-                  className={`relative pb-2 pt-2 uppercase tracking-wide transition-colors duration-200 ${
-                    isActive ? "text-poster-yellow" : "hover:text-forest"
-                  }`}
+                  className={`relative pb-2 pt-2 uppercase tracking-wide transition-colors duration-200 ${isActive ? "text-poster-yellow" : "hover:text-forest"
+                    }`}
                 >
                   {link.label}
                 </Link>
@@ -106,7 +106,7 @@ export default function Navbar() {
             </button>
             <Link
               href="/contact"
-              className="flex-shrink-0 bg-primary text-forest font-bold px-5 py-2.5 min-h-[48px] flex items-center justify-center rounded-full text-sm uppercase tracking-wide hover:opacity-90 transition-opacity"
+              className="hidden md:flex flex-shrink-0 bg-primary text-forest font-bold px-5 py-2.5 min-h-[48px] items-center justify-center rounded-full text-sm uppercase tracking-wide hover:opacity-90 transition-opacity"
             >
               BOOK A STAY
             </Link>
@@ -121,7 +121,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 bg-gradient-to-b from-[#3a4538] via-[#4a5542] to-[#2d3528] md:hidden"
+            className="fixed inset-0 z-[60] bg-gradient-to-b from-[#3a4538] via-[#4a5542] to-[#2d3528] md:hidden"
             onClick={closeMobileMenu}
             aria-modal="true"
             role="dialog"
@@ -149,11 +149,10 @@ export default function Navbar() {
                       key={link.href}
                       href={link.href}
                       onClick={closeMobileMenu}
-                      className={`min-h-[48px] flex items-center px-4 rounded-lg text-lg font-medium uppercase tracking-wide transition-colors ${
-                        isActive
+                      className={`min-h-[48px] flex items-center px-4 rounded-lg text-lg font-medium uppercase tracking-wide transition-colors ${isActive
                           ? "text-poster-yellow bg-white/10"
                           : "text-slate-100 hover:bg-white/10"
-                      }`}
+                        }`}
                     >
                       {link.label}
                     </Link>

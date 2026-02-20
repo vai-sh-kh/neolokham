@@ -14,6 +14,7 @@ export const ROUTES = {
   home: "/",
   about: "/about",
   brochure: "/brochure",
+  videos: "/videos",
   contact: "/contact",
   grooming: "/grooming",
 } as const;

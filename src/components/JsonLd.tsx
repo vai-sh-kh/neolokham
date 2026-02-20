@@ -1,3 +1,4 @@
+import { APP_CONTACT } from "@/lib/contact";
 import { SITE_URL } from "@/lib/seo";
 
 const organizationSchema = {
@@ -9,11 +10,13 @@ const organizationSchema = {
     "Cage-free dog boarding, swimming, and nature experiences on a 1.5-acre tropical fruit farm in Trivandrum. Sustainable pet resort and carbon capture initiative.",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Trivandrum",
-    addressRegion: "Kerala",
-    addressCountry: "IN",
+    streetAddress: APP_CONTACT.address.lines.slice(1, -1).join(", "),
+    addressLocality: APP_CONTACT.address.locality,
+    addressRegion: APP_CONTACT.address.region,
+    postalCode: APP_CONTACT.address.postalCode,
+    addressCountry: APP_CONTACT.address.country,
   },
-  telephone: "+91-7736390719",
+  telephone: `+91-${APP_CONTACT.phone}`,
   areaServed: "Trivandrum, Kerala",
 };
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { APP_CONTACT } from "@/lib/contact";
 
 export default function Footer() {
   return (
@@ -80,18 +81,48 @@ export default function Footer() {
             VISIT US
           </h4>
           <p className="text-slate-400 text-base leading-relaxed mb-4">
-            The Village, Sector 12
-            <br />
-            Pet Paradise Road
-            <br />
-            Bangalore, KA 560102
+            {APP_CONTACT.address.lines.map((line, i) => (
+              <span key={i}>
+                {line}
+                {i < APP_CONTACT.address.lines.length - 1 && <br />}
+              </span>
+            ))}
           </p>
-          <div className="flex items-center gap-2 text-primary font-bold">
+          <a
+            href={`tel:${APP_CONTACT.phoneRaw}`}
+            className="flex items-center gap-2 text-primary font-bold hover:underline min-h-[48px]"
+          >
             <span className="material-symbols-outlined">call</span>
-            +91 98765 43210
-          </div>
+            {APP_CONTACT.phoneDisplay}
+          </a>
+          <a
+            href={APP_CONTACT.whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+            className="flex items-center gap-2 text-primary font-bold hover:underline min-h-[48px] mt-2"
+          >
+            <span className="material-symbols-outlined">chat</span>
+            WhatsApp
+          </a>
         </div>
       </div>
+      {APP_CONTACT.googleMapEmbedUrl && (
+        <div className="max-w-7xl mx-auto mt-10 w-full">
+          <div className="rounded-lg overflow-hidden border border-white/10 h-[200px] sm:h-[250px]">
+            <iframe
+              src={APP_CONTACT.googleMapEmbedUrl}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Neolokam location"
+            />
+          </div>
+        </div>
+      )}
       <div className="max-w-7xl mx-auto mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/10 text-center text-slate-500 text-sm px-4">
         © 2024 Neolokam Canine Resort. Designed for the Living Superstars.
       </div>

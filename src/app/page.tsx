@@ -4,13 +4,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/AnimatedSection";
 import AnimatedCard from "@/components/AnimatedCard";
+import { APP_CONTACT } from "@/lib/contact";
 import { SITE_URL } from "@/lib/seo";
 
-const TITLE = "Neolokam | Cage-Free Dog Boarding & 1.5 Acre Park in Trivandrum";
+const TITLE =
+  "Neolokam | Sustainable Pet Farm Kerala – Cage-Free Dog Boarding & 1.5-Acre Carbon Capture Park";
 const DESCRIPTION =
-  "Experience a real dog vacation at Neolokam. We offer cage-free boarding, swimming, and nature walks on a sustainable 1.5-acre tropical fruit farm. No cages, just good vibes.";
+  "Trivandrum's only 1.5-acre carbon capture dog park. Sustainable tropical fruit farming meets ethical, cage-free canine wellness. Zero pollution, zero concrete—a real vacation for your dog.";
 const KEYWORDS = [
-  "Dog boarding Trivandrum",
+  "Sustainable Pet Farm Kerala",
+  "Cage-Free Dog Boarding",
+  "carbon capture dog park Trivandrum",
+  "dog boarding Trivandrum",
   "cage-free dog park",
   "pet resort Kerala",
   "Neolokam dog staycation",
@@ -50,27 +55,33 @@ export default function HomePage() {
         <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl">
           <div className="bg-forest/70 backdrop-blur-md p-6 sm:p-8 md:p-12 rounded-2xl sm:rounded-3xl border-2 border-primary/30 shadow-2xl">
             <div className="inline-block px-4 py-1 bg-primary/20 border border-primary/30 rounded-full text-primary font-bold mb-6 tracking-widest text-xs uppercase">
-              EST. 2024 • THE CANINE PARADISE
+              Trivandrum • 1.5 Acres • Zero Concrete
             </div>
-            <h1 className="text-5xl md:text-7xl font-[800] text-white mb-6 leading-[1.1]">
-              Neolokam: The Ultimate{" "}
-              <span className="text-primary italic font-serif">
-                Canine Resort
-              </span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[800] text-white mb-6 leading-[1.1]">
+              Trivandrum&apos;s Only 1.5-Acre{" "}
+              <span className="text-primary">Carbon Capture Dog Park</span>
             </h1>
-            <p className="text-lg md:text-xl text-slate-200 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-              A 1.5 Acre Pet Paradise where nature meets luxury. Immerse your
-              companion in a curated village atmosphere designed for the modern
-              superstar.
+            <p className="text-base sm:text-lg md:text-xl text-slate-200 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+              Sustainable tropical fruit farming meets ethical, cage-free canine
+              wellness. Give your dog a real vacation in a zero-pollution,
+              zero-concrete environment.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-              <button className="min-h-[48px] bg-primary text-forest px-6 sm:px-10 py-3 sm:py-4 rounded-xl font-[800] text-base sm:text-lg flex items-center justify-center gap-2 hover:bg-white transition-all shadow-xl">
-                <span className="material-symbols-outlined">explore</span>
-                EXPLORE THE VILLAGE
-              </button>
-              <button className="min-h-[48px] bg-white/10 backdrop-blur-md border border-white/30 text-white px-6 sm:px-10 py-3 sm:py-4 rounded-xl font-[800] text-base sm:text-lg flex items-center justify-center hover:bg-white/20 transition-all">
-                WATCH TOUR
-              </button>
+              <Link
+                href="/contact"
+                className="min-h-[48px] bg-primary text-forest px-6 sm:px-10 py-3 sm:py-4 rounded-xl font-[800] text-base sm:text-lg flex items-center justify-center gap-2 hover:bg-white transition-all shadow-xl"
+              >
+                <span className="material-symbols-outlined">
+                  calendar_today
+                </span>
+                Book a Stay
+              </Link>
+              <Link
+                href="/about"
+                className="min-h-[48px] bg-white/10 backdrop-blur-md border border-white/30 text-white px-6 sm:px-10 py-3 sm:py-4 rounded-xl font-[800] text-base sm:text-lg flex items-center justify-center hover:bg-white/20 transition-all"
+              >
+                Our Eco-Mission
+              </Link>
             </div>
           </div>
         </div>
@@ -80,15 +91,6 @@ export default function HomePage() {
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-background-light">
         <header className="py-8 sm:py-12 px-4 flex flex-col items-center text-center">
           <div className="mb-6">
-            <div className="flex justify-center mb-2">
-              <svg
-                className="w-12 h-12 sm:w-16 sm:h-16 text-neolokam-green"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z" />
-              </svg>
-            </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-widest text-neolokam-green uppercase">
               NEOLOKAM
             </h2>
@@ -117,7 +119,7 @@ export default function HomePage() {
             </h2>
             <div className="w-24 h-1.5 bg-primary mx-auto rounded-full"></div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-[1320px] mx-auto">
             {/* Boarding */}
             <AnimatedCard
               delay={0}
@@ -135,11 +137,16 @@ export default function HomePage() {
               </div>
               <div className="px-4 pb-6">
                 <h3 className="text-xl font-bold text-forest mb-2">
-                  Boarding (Cage-free)
+                  Boarding (Cage-Free)
                 </h3>
+                <p className="text-slate-600 text-sm italic mb-2">
+                  Village-style living with structured freedom.
+                </p>
                 <p className="text-slate-600 text-base leading-relaxed">
-                  Village-style living where every dog enjoys freedom in a safe,
-                  monitored rustic environment.
+                  Open 1.5-acre farmland boarding where dogs live naturally in
+                  supervised groups. Behaviour-based placement, calm routines,
+                  and constant human oversight ensure safety without
+                  confinement.
                 </p>
               </div>
             </AnimatedCard>
@@ -161,9 +168,13 @@ export default function HomePage() {
               </div>
               <div className="px-4 pb-6">
                 <h3 className="text-xl font-bold text-forest mb-2">Swimming</h3>
+                <p className="text-slate-600 text-sm italic mb-2">
+                  Paw-sitively refreshing wellness sessions.
+                </p>
                 <p className="text-slate-600 text-base leading-relaxed">
-                  Paw-sitively refreshing mineral pools designed for joint
-                  health and pure aquatic joy.
+                  Supervised splash pools designed for joint health, confidence
+                  building, stress release, and pure canine happiness — because
+                  movement is medicine.
                 </p>
               </div>
             </AnimatedCard>
@@ -185,9 +196,13 @@ export default function HomePage() {
               </div>
               <div className="px-4 pb-6">
                 <h3 className="text-xl font-bold text-forest mb-2">Training</h3>
+                <p className="text-slate-600 text-sm italic mb-2">
+                  Positive reinforcement meets village wisdom.
+                </p>
                 <p className="text-slate-600 text-base leading-relaxed">
-                  Character building for the modern canine. Positive
-                  reinforcement meets village wisdom.
+                  From leash manners to social confidence, our training focuses
+                  on emotional balance, character building, and calm behaviour
+                  through real-world interaction — not force.
                 </p>
               </div>
             </AnimatedCard>
@@ -214,9 +229,13 @@ export default function HomePage() {
                   <h3 className="text-xl font-bold text-forest mb-2">
                     Home Grooming
                   </h3>
+                  <p className="text-slate-600 text-sm italic mb-2">
+                    Luxury grooming, wherever your dog feels safest.
+                  </p>
                   <p className="text-slate-600 text-base leading-relaxed">
-                    Instagram-ready styling delivered at your doorstep or in our
-                    luxury salon huts.
+                    Professional hygiene care delivered at your home or inside
+                    our salon huts. Includes bathing, paw trimming, ear
+                    cleaning, hygiene cuts, nail care, and coat conditioning.
                   </p>
                 </div>
               </AnimatedCard>
@@ -240,33 +259,55 @@ export default function HomePage() {
             </div>
             <div>
               <h2 className="text-primary font-bold tracking-widest text-sm mb-4 uppercase">
-                The Neolokam Manifesto
+                THE NEOLOKAM MANIFESTO
               </h2>
               <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[800] text-white mb-6 leading-tight">
-                Your dog is a{" "}
-                <span className="text-primary underline decoration-wood decoration-4 underline-offset-8">
-                  living superstar
-                </span>
-                , not a suitcase.
+                Your dog is a living being, not a booking slot.
               </h3>
-              <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
-                We reject the clinical, storage-unit approach to pet care. At
-                Neolokam, we demand a partnership. We handle the luxury, you
-                handle the responsibility. No shortcuts, no cages, just pure
-                village living.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="flex items-center gap-3 text-white/80">
-                  <span className="material-symbols-outlined text-primary">
+              <div className="space-y-4 text-slate-300 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
+                <p>
+                  We do not run a storage facility for pets. Neolokam is a
+                  structured, cage-free village built on open agricultural land
+                  where dogs live in supervised groups, follow real routines,
+                  and experience nature safely.
+                </p>
+                <p>
+                  Freedom here is earned through responsibility. Every dog is
+                  assessed. Every stay begins with a visit. Every parent
+                  participates honestly.
+                </p>
+                <p>
+                  No shortcuts. No overcrowding. No chaos disguised as
+                  &quot;cage-free.&quot; Just structured freedom, trained
+                  supervision, and ethical care.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <div className="flex items-center gap-3 text-white/90">
+                  <span className="material-symbols-outlined text-primary shrink-0">
                     check_circle
                   </span>
-                  <span>Mandatory Health Clearance</span>
+                  <span>Mandatory Trial Visit &amp; Behaviour Assessment</span>
                 </div>
-                <div className="flex items-center gap-3 text-white/80">
-                  <span className="material-symbols-outlined text-primary">
+                <div className="flex items-center gap-3 text-white/90">
+                  <span className="material-symbols-outlined text-primary shrink-0">
                     check_circle
                   </span>
-                  <span>Transparent Parent Policy</span>
+                  <span>
+                    Updated Vaccination &amp; Health Clearance Required
+                  </span>
+                </div>
+                <div className="flex items-center gap-3 text-white/90">
+                  <span className="material-symbols-outlined text-primary shrink-0">
+                    check_circle
+                  </span>
+                  <span>Transparent Parent Responsibility Policy</span>
+                </div>
+                <div className="flex items-center gap-3 text-white/90">
+                  <span className="material-symbols-outlined text-primary shrink-0">
+                    check_circle
+                  </span>
+                  <span>Limited Capacity for Calm, Safe Groups</span>
                 </div>
               </div>
             </div>
@@ -282,7 +323,10 @@ export default function HomePage() {
       >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 sm:mb-16">
-            <span className="text-forest/60 font-bold uppercase tracking-widest text-sm">
+            <span className="inline-block px-3 py-1 rounded-full bg-forest/10 text-forest text-xs font-bold uppercase tracking-widest mb-4">
+              Annual Memberships
+            </span>
+            <span className="text-forest/60 font-bold uppercase tracking-widest text-sm block">
               Join the Elite
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-[800] text-forest mt-2 mb-4">
@@ -290,11 +334,12 @@ export default function HomePage() {
             </h2>
             <p className="text-slate-500 max-w-xl mx-auto text-base">
               Select a tier that matches your superstar&apos;s lifestyle.
-              Premium care, predictable pricing.
+              Premium care, predictable pricing. 30 usable boarding days per
+              year.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {/* Tier 1 */}
+            {/* Tier 1: ESSENTIAL */}
             <AnimatedCard
               delay={0}
               className="paper-texture wood-border rounded-2xl p-8 flex flex-col items-center text-center"
@@ -302,41 +347,61 @@ export default function HomePage() {
               <span className="bg-forest text-primary px-4 py-1 rounded-full text-xs font-bold mb-6">
                 ESSENTIAL
               </span>
-              <div className="text-5xl font-[800] text-forest mb-2">
+              <div className="text-4xl sm:text-5xl font-[800] text-forest mb-1">
                 ₹11,111
-                <span className="text-base font-normal text-slate-500">
-                  /mo
-                </span>
               </div>
-              <p className="text-slate-600 mb-8 font-medium">
-                Standard Village Access
+              <p className="text-base font-normal text-slate-500 mb-6">
+                / Year
               </p>
-              <ul className="w-full space-y-4 mb-10 text-left">
+              <p className="text-slate-700 mb-2 font-semibold">
+                Village Starter Access
+              </p>
+              <p className="text-slate-600 text-sm mb-6">
+                Perfect for first-time visitors and calm companions.
+              </p>
+              <ul className="w-full space-y-3 mb-10 text-left text-sm sm:text-base">
                 <li className="flex items-center gap-3 text-forest/80">
-                  <span className="material-symbols-outlined text-primary">
+                  <span className="material-symbols-outlined text-primary shrink-0">
                     done
-                  </span>{" "}
-                  2 Days Boarding / Month
+                  </span>
+                  Trial Visit &amp; Behaviour Assessment
                 </li>
                 <li className="flex items-center gap-3 text-forest/80">
-                  <span className="material-symbols-outlined text-primary">
+                  <span className="material-symbols-outlined text-primary shrink-0">
                     done
-                  </span>{" "}
-                  1 Mineral Pool Session
+                  </span>
+                  30 Days Boarding (usable within 1 year)
                 </li>
                 <li className="flex items-center gap-3 text-forest/80">
-                  <span className="material-symbols-outlined text-primary">
+                  <span className="material-symbols-outlined text-primary shrink-0">
                     done
-                  </span>{" "}
-                  Basic Health Report
+                  </span>
+                  4 Supervised Play Sessions
+                </li>
+                <li className="flex items-center gap-3 text-forest/80">
+                  <span className="material-symbols-outlined text-primary shrink-0">
+                    done
+                  </span>
+                  4 Swimming Splash Sessions
+                </li>
+                <li className="flex items-center gap-3 text-forest/80">
+                  <span className="material-symbols-outlined text-primary shrink-0">
+                    done
+                  </span>
+                  Basic Health &amp; Activity Report
                 </li>
               </ul>
-              <button className="w-full min-h-[48px] py-3 sm:py-4 flex items-center justify-center bg-wood text-cream font-bold rounded-xl hover:bg-forest transition-all text-base">
-                CHOOSE PLAN
-              </button>
+              <Link
+                href={APP_CONTACT.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full min-h-[48px] py-3 sm:py-4 flex items-center justify-center bg-wood text-cream font-bold rounded-xl hover:bg-forest transition-all text-base"
+              >
+                Choose Plan
+              </Link>
             </AnimatedCard>
 
-            {/* Tier 2 */}
+            {/* Tier 2: VILLAGER ELITE (Most Popular) */}
             <AnimatedCard
               delay={0.1}
               className="bg-forest rounded-3xl p-8 flex flex-col items-center text-center transform scale-105 shadow-2xl relative border-4 border-primary/30"
@@ -347,47 +412,74 @@ export default function HomePage() {
               <span className="bg-primary/20 text-primary px-4 py-1 rounded-full text-xs font-bold mb-6">
                 VILLAGER ELITE
               </span>
-              <div className="text-5xl font-[800] text-white mb-2">
+              <div className="text-4xl sm:text-5xl font-[800] text-white mb-1">
                 ₹15,555
-                <span className="text-base font-normal text-slate-400">
-                  /mo
-                </span>
               </div>
-              <p className="text-slate-300 mb-8 font-medium">
-                Enhanced Resort Comforts
+              <p className="text-base font-normal text-slate-400 mb-6">
+                / Year
               </p>
-              <ul className="w-full space-y-4 mb-10 text-left">
+              <p className="text-slate-200 mb-2 font-semibold">
+                Enhanced Village Comforts
+              </p>
+              <p className="text-slate-400 text-sm mb-6">
+                Our balanced care package combining freedom, training, and
+                wellness.
+              </p>
+              <ul className="w-full space-y-3 mb-10 text-left text-sm sm:text-base">
                 <li className="flex items-center gap-3 text-white/90">
-                  <span className="material-symbols-outlined text-primary">
+                  <span className="material-symbols-outlined text-primary shrink-0">
                     verified
-                  </span>{" "}
-                  5 Days Boarding / Month
+                  </span>
+                  30 Days Cage-Free Boarding
                 </li>
                 <li className="flex items-center gap-3 text-white/90">
-                  <span className="material-symbols-outlined text-primary">
+                  <span className="material-symbols-outlined text-primary shrink-0">
                     verified
-                  </span>{" "}
-                  4 Mineral Pool Sessions
+                  </span>
+                  Behaviour-Based Group Allocation
                 </li>
                 <li className="flex items-center gap-3 text-white/90">
-                  <span className="material-symbols-outlined text-primary">
+                  <span className="material-symbols-outlined text-primary shrink-0">
                     verified
-                  </span>{" "}
-                  1 Styling Session / Month
+                  </span>
+                  8 Swimming Sessions
                 </li>
                 <li className="flex items-center gap-3 text-white/90">
-                  <span className="material-symbols-outlined text-primary">
+                  <span className="material-symbols-outlined text-primary shrink-0">
                     verified
-                  </span>{" "}
+                  </span>
+                  1 Professional Grooming
+                </li>
+                <li className="flex items-center gap-3 text-white/90">
+                  <span className="material-symbols-outlined text-primary shrink-0">
+                    verified
+                  </span>
+                  Socialisation Training
+                </li>
+                <li className="flex items-center gap-3 text-white/90">
+                  <span className="material-symbols-outlined text-primary shrink-0">
+                    verified
+                  </span>
+                  Diet Monitoring
+                </li>
+                <li className="flex items-center gap-3 text-white/90">
+                  <span className="material-symbols-outlined text-primary shrink-0">
+                    verified
+                  </span>
                   Priority Booking
                 </li>
               </ul>
-              <button className="w-full min-h-[48px] py-3 sm:py-4 flex items-center justify-center bg-primary text-forest font-black rounded-xl hover:scale-105 transition-all text-base">
-                JOIN THE VILLAGE
-              </button>
+              <Link
+                href={APP_CONTACT.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full min-h-[48px] py-3 sm:py-4 flex items-center justify-center bg-primary text-forest font-black rounded-xl hover:scale-105 transition-all text-base"
+              >
+                Join the Village
+              </Link>
             </AnimatedCard>
 
-            {/* Tier 3 */}
+            {/* Tier 3: ROYAL RESIDENT */}
             <AnimatedCard
               delay={0.2}
               className="paper-texture wood-border rounded-2xl p-8 flex flex-col items-center text-center"
@@ -395,46 +487,77 @@ export default function HomePage() {
               <span className="bg-forest text-primary px-4 py-1 rounded-full text-xs font-bold mb-6">
                 ROYAL RESIDENT
               </span>
-              <div className="text-5xl font-[800] text-forest mb-2">
+              <div className="text-4xl sm:text-5xl font-[800] text-forest mb-1">
                 ₹22,222
-                <span className="text-base font-normal text-slate-500">
-                  /mo
-                </span>
               </div>
-              <p className="text-slate-600 mb-8 font-medium">
+              <p className="text-base font-normal text-slate-500 mb-6">
+                / Year
+              </p>
+              <p className="text-slate-700 mb-2 font-semibold">
                 The Ultimate Village Lifestyle
               </p>
-              <ul className="w-full space-y-4 mb-10 text-left">
+              <p className="text-slate-600 text-sm mb-6">
+                Premium care for dogs who need full support and personalised
+                attention.
+              </p>
+              <ul className="w-full space-y-3 mb-10 text-left text-sm sm:text-base">
                 <li className="flex items-center gap-3 text-forest/80">
-                  <span className="material-symbols-outlined text-primary">
+                  <span className="material-symbols-outlined text-primary shrink-0">
                     stars
-                  </span>{" "}
-                  10 Days Boarding / Month
+                  </span>
+                  30 Days Premium Boarding
                 </li>
                 <li className="flex items-center gap-3 text-forest/80">
-                  <span className="material-symbols-outlined text-primary">
+                  <span className="material-symbols-outlined text-primary shrink-0">
                     stars
-                  </span>{" "}
-                  Unlimited Pool Access
+                  </span>
+                  Unlimited Swimming Access
                 </li>
                 <li className="flex items-center gap-3 text-forest/80">
-                  <span className="material-symbols-outlined text-primary">
+                  <span className="material-symbols-outlined text-primary shrink-0">
                     stars
-                  </span>{" "}
-                  Full Grooming Package
+                  </span>
+                  2 Professional Groomings
                 </li>
                 <li className="flex items-center gap-3 text-forest/80">
-                  <span className="material-symbols-outlined text-primary">
+                  <span className="material-symbols-outlined text-primary shrink-0">
                     stars
-                  </span>{" "}
-                  Dedicated Concierge
+                  </span>
+                  Advanced Behaviour Support
+                </li>
+                <li className="flex items-center gap-3 text-forest/80">
+                  <span className="material-symbols-outlined text-primary shrink-0">
+                    stars
+                  </span>
+                  Personalised Diet Control
+                </li>
+                <li className="flex items-center gap-3 text-forest/80">
+                  <span className="material-symbols-outlined text-primary shrink-0">
+                    stars
+                  </span>
+                  Dedicated Care Supervision
+                </li>
+                <li className="flex items-center gap-3 text-forest/80">
+                  <span className="material-symbols-outlined text-primary shrink-0">
+                    stars
+                  </span>
+                  Priority Access to All Activities
                 </li>
               </ul>
-              <button className="w-full min-h-[48px] py-3 sm:py-4 flex items-center justify-center bg-wood text-cream font-bold rounded-xl hover:bg-forest transition-all text-base">
-                GO ROYAL
-              </button>
+              <Link
+                href={APP_CONTACT.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full min-h-[48px] py-3 sm:py-4 flex items-center justify-center bg-wood text-cream font-bold rounded-xl hover:bg-forest transition-all text-base"
+              >
+                Go Royal
+              </Link>
             </AnimatedCard>
           </div>
+          <p className="mt-8 text-center text-slate-500 text-sm max-w-2xl mx-auto">
+            Final pricing depends on dog size, temperament, food requirements
+            &amp; custom care.
+          </p>
         </div>
       </AnimatedSection>
     </>

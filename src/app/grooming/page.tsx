@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AnimatedSection from "@/components/AnimatedSection";
 import AnimatedCard from "@/components/AnimatedCard";
+import { APP_CONTACT } from "@/lib/contact";
 import { SITE_URL } from "@/lib/seo";
-import { WHATSAPP_NUMBER } from "@/app/contact/constants";
 
 const TITLE = "Professional Home Dog Grooming Trivandrum | Neolokam";
 const DESCRIPTION =
@@ -81,7 +81,7 @@ export default function GroomingPage() {
             bathing—no drama, no travel. Starting at ₹1500.
           </p>
           <Link
-            href={`https://wa.me/91${WHATSAPP_NUMBER.replace(/\D/g, "")}`}
+            href={APP_CONTACT.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Book grooming on WhatsApp"
