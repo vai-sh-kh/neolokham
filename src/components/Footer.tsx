@@ -23,31 +23,47 @@ export default function Footer() {
         </div>
         <div>
           <h4 className="font-bold mb-4 sm:mb-6 text-primary text-sm sm:text-base">
-            VILLAGE LINKS
+            QUICK LINKS
           </h4>
           <ul className="space-y-1 text-slate-400">
             <li>
               <Link
                 className="block py-3 min-h-[48px] flex items-center hover:text-white transition-colors text-base"
+                href="/"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="block py-3 min-h-[48px] flex items-center hover:text-white transition-colors text-base"
                 href="/about"
               >
-                Our Ethos
+                About
               </Link>
             </li>
             <li>
               <Link
                 className="block py-3 min-h-[48px] flex items-center hover:text-white transition-colors text-base"
-                href="#"
+                href="/brochure"
               >
-                Success Stories
+                Brochure
               </Link>
             </li>
             <li>
               <Link
                 className="block py-3 min-h-[48px] flex items-center hover:text-white transition-colors text-base"
-                href="#"
+                href="/videos"
               >
-                Safety Protocols
+                Videos
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="block py-3 min-h-[48px] flex items-center hover:text-white transition-colors text-base"
+                href="/contact"
+              >
+                Contact
               </Link>
             </li>
           </ul>
