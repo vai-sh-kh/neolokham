@@ -7,7 +7,7 @@ const organizationSchema = {
   name: "Neolokam",
   url: SITE_URL,
   description:
-    "Cage-free dog boarding, swimming, and nature experiences on a 1.5-acre tropical fruit farm in Trivandrum. Sustainable pet resort and carbon capture initiative.",
+    "Cage-free dog boarding, swimming, and nature experiences on a 1.5-acre tropical pet park in Trivandrum. Sustainable pet resort and carbon capture initiative.",
   address: {
     "@type": "PostalAddress",
     streetAddress: APP_CONTACT.address.lines.slice(1, -1).join(", "),

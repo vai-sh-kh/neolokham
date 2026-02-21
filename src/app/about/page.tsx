@@ -5,12 +5,12 @@ import { APP_CONTACT } from "@/lib/contact";
 import { SITE_URL } from "@/lib/seo";
 
 const TITLE =
-  "About Neolokam | Sustainable Carbon Capture Farm & Canine Wellness";
+  "About Neolokam | Sustainable Carbon Capture Pet Park & Canine Wellness";
 const DESCRIPTION =
   "Neolokam is an independently developed ecological initiative in Trivandrum focused on carbon capture, tropical fruit cultivation, and ethical animal welfare.";
 const KEYWORDS = [
   "Sustainable dog park",
-  "carbon capture farm Kerala",
+  "carbon capture pet park Kerala",
   "indigenous plant conservation",
   "ethical animal care Trivandrum",
 ];

@@ -49,7 +49,7 @@ export default function ContactPage() {
               Entrance Gate
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.1]">
-              Visit the <span className="text-primary">Farm</span>
+              Visit the <span className="text-primary">Pet Park</span>
             </h1>
             <p className="text-slate-500 text-base sm:text-lg leading-relaxed">
               Welcome to Neolokam &mdash; a carbon-capture agricultural
@@ -210,7 +210,7 @@ export default function ContactPage() {
               <div className="w-full sm:w-64 md:w-48 h-32 flex-shrink-0 bg-slate-200 rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all cursor-pointer">
                 <img
                   className="w-full h-full object-cover"
-                  alt="Stylized map showing Neolokam Farm in Trivandrum"
+                  alt="Stylized map showing Neolokam Pet Park in Trivandrum"
                   src="/images/contact-map.jpg"
                 />
               </div>

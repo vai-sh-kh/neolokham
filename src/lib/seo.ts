@@ -7,7 +7,7 @@ export const SITE_URL =
 
 export const SITE_NAME = "Neolokam";
 
-export const DEFAULT_OG_IMAGE = "/images/hero-tropical.jpg";
+export const DEFAULT_OG_IMAGE = "/home-logo.jpeg";
 
 /** All public routes for sitemap and nav. */
 export const ROUTES = {

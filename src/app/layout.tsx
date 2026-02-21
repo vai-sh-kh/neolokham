@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Experience a real dog vacation at Neolokam. Cage-free boarding, swimming, and nature walks on a sustainable 1.5-acre tropical fruit farm in Trivandrum. No cages, just good vibes.",
+    "Experience a real dog vacation at Neolokam. Cage-free boarding, swimming, and nature walks on a sustainable 1.5-acre tropical pet park in Trivandrum. No cages, just good vibes.",
   keywords: [
     "dog boarding Trivandrum",
     "cage-free dog park",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Neolokam | Cage-Free Dog Boarding & 1.5 Acre Park in Trivandrum",
     description:
-      "Experience a real dog vacation. Cage-free boarding, swimming, nature walks on a 1.5-acre tropical farm in Trivandrum.",
+      "Experience a real dog vacation. Cage-free boarding, swimming, nature walks on a 1.5-acre tropical pet park in Trivandrum.",
   },
   robots: {
     index: true,

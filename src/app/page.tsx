@@ -8,11 +8,11 @@ import { APP_CONTACT } from "@/lib/contact";
 import { SITE_URL } from "@/lib/seo";
 
 const TITLE =
-  "Neolokam | Sustainable Pet Farm Kerala – Cage-Free Dog Boarding & 1.5-Acre Carbon Capture Park";
+  "Neolokam | Sustainable Pet Park Kerala – Cage-Free Dog Boarding & 1.5-Acre Carbon Capture Park";
 const DESCRIPTION =
-  "Trivandrum's only 1.5-acre carbon capture dog park. Sustainable tropical fruit farming meets ethical, cage-free canine wellness. Zero pollution, zero concrete—a real vacation for your dog.";
+  "Trivandrum's only 1.5-acre carbon capture dog park. Sustainable pet park meets ethical, cage-free canine wellness. Zero pollution, zero concrete—a real vacation for your dog.";
 const KEYWORDS = [
-  "Sustainable Pet Farm Kerala",
+  "Sustainable Pet Park Kerala",
   "Cage-Free Dog Boarding",
   "carbon capture dog park Trivandrum",
   "dog boarding Trivandrum",
